@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Fomato.Models
 {
-    public class FomatoDatabaseInitializer : DropCreateDatabaseAlways<FomatoContext>
+    public class FomatoDatabaseInitializer : DropCreateDatabaseIfModelChanges<FomatoContext>
     {
         protected override void Seed(FomatoContext context)
         {

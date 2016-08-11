@@ -186,7 +186,18 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Images\accent.png" />
+    <Content Include="Images\boatbig.png" />
+    <Content Include="Images\boatpaper.png" />
+    <Content Include="Images\boatsail.png" />
     <Content Include="Images\bullet.png" />
+    <Content Include="Images\busdouble.png" />
+    <Content Include="Images\busgreen.png" />
+    <Content Include="Images\busred.png" />
+    <Content Include="Images\carconvert.png" />
+    <Content Include="Images\carearly.png" />
+    <Content Include="Images\carfast.png" />
+    <Content Include="Images\carfaster.png" />
+    <Content Include="Images\carracer.png" />
     <Content Include="Images\heroAccent.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
@@ -198,8 +209,19 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\planeace.png" />
+    <Content Include="Images\planeglider.png" />
+    <Content Include="Images\planepaper.png" />
+    <Content Include="Images\planeprop.png" />
+    <Content Include="Images\rocket.png" />
+    <Content Include="Images\truckbig.png" />
+    <Content Include="Images\truckearly.png" />
+    <Content Include="Images\truckfire.png" />
     <Content Include="packages.config" />
+    <Content Include="Images\Thumbs.db" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
+    <Content Include="ProductDetails.aspx" />
+    <Content Include="ProductList.aspx" />
     <Content Include="Scripts\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.js" />
@@ -303,6 +325,20 @@
     <Compile Include="Models\FomatoContext.cs" />
     <Compile Include="Models\FomatoDatabaseInitializer.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
