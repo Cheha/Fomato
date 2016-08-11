@@ -6,12 +6,12 @@ using System.Web;
 
 namespace Fomato.Models
 {
-    public class FomatoDatabaseInitializer : DropCreateDatabaseIfModelChanges<FomatoContext>
+    public class FomatoDatabaseInitializer : DropCreateDatabaseAlways<FomatoContext>
     {
         protected override void Seed(FomatoContext context)
         {
-            GetCategories().ForEach(c => context.Categories.Add(c));
             GetProducts().ForEach(p => context.Products.Add(p));
+            GetCategories().ForEach(c => context.Categories.Add(c));  
         }
 
         private static List<Category> GetCategories()

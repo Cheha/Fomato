@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Fomato.Models;
 
 namespace Fomato
 {
@@ -68,6 +69,13 @@ namespace Fomato
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public IQueryable<Category> GetCategories()
+        {
+            var _db = new FomatoContext();
+            IQueryable<Category> categories = _db.Categories;
+            return categories;
         }
     }
 }

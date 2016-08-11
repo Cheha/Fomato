@@ -14,7 +14,7 @@ namespace Fomato.Models
         [Required, StringLength(100), Display(Name="Name")]
         public string ProductName { get; set; }
 
-        [Required, StringLength(100), Display(Name = "Product Description"), 
+        [Required, StringLength(500), Display(Name = "Product Description"), 
             DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
