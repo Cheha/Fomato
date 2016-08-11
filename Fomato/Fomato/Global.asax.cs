@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,6 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using Fomato;
+using Fomato.Models;
 
 namespace Fomato
 {
@@ -16,6 +18,9 @@ namespace Fomato
             // Code that runs on application startup
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
+
+            // Initialize Fomato Database
+            Database.SetInitializer(new FomatoDatabaseInitializer());
         }
 
         void Application_End(object sender, EventArgs e)
